@@ -5,8 +5,6 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 const db: IMonkManager = monk.default(process.env.MONGO_URI ?? '')
-// console.log(db._state)
-console.log(process.env.MONGO_URI)
 
 
 const urls: ICollection = db.get('urls')
