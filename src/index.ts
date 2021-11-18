@@ -68,6 +68,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
     }
 });
 
-app.listen(3000, () => {
-    console.log("running at 3000");
+const PORT : string|number = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`running at ${PORT}`);
 });
