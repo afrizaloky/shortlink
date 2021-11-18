@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "vercel-dev": "vercel dev",
-    "start": "ts-node ./src/index.ts",
+    "start": "node build",
     "deploy": "vercel deploy --prod",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p .",
