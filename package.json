@@ -7,7 +7,7 @@
     "start": "node build/index.js",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p . && cp .env build/.env",
-    "build-vercel": "tsc -p",
+    "build-vercel": "tsc -p .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
