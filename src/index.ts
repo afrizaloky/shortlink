@@ -31,6 +31,14 @@ app.get("/:id", async (req: Request, res: Response, next: NextFunction) => {
     }
 });
 
+app.get("/", async (req: Request, res: Response, next: NextFunction) => {
+    try {
+        res.json({status:200})
+    } catch (error) {
+        next(error)
+    }
+});
+
 app.post("/create", async (req: Request, res: Response, next: NextFunction) => {
     let {slug, dest} = req.body;
 
