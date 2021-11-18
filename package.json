@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node build/index.js",
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod",
     "dev": "nodemon src/index.ts",
     "build": "tsc -p . && cp .env build/.env",
     "build-vercel": "tsc -p .",
