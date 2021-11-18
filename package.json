@@ -8,8 +8,8 @@
     "start": "ts-node ./src/index.ts",
     "deploy": "vercel deploy --prod",
     "dev": "nodemon src/index.ts",
-    "build": "tsc -p . && cp .env build/.env",
-    "build-vercel": "tsc -p .",
+    "build": "tsc -p .",
+    "build-dev": "tsc -p . && cp .env build/.env",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
