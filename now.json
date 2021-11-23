@@ -7,19 +7,15 @@
             "config": {
                 "distDir": "build"
             }
+
         }, {
-            "src": "/build/index.js",
-            "use": "@vercel/node",
-            "config": {
-                "includeFiles": ["/build/**"]
-            }
+            "src": "build/index.js",
+            "use": "@now/node-server"
         }
 
     ],
     "routes": [{
-            "src": "/(.*)",
-            "dest": "/build"
-        }
-
-    ]
+        "src": "/(.*)",
+        "dest": "build/index.js"
+    }]
 }
