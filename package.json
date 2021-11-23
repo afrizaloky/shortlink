@@ -2,7 +2,7 @@
   "name": "Shortlink",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
     "vercel-dev": "vercel dev",
     "start": "node build",
